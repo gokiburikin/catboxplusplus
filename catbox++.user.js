@@ -43,10 +43,11 @@
         let c = resultDivs[i];
         c.id = c.querySelector("input[type=checkbox]").value;
 
-        var quickDelete = document.createElement("A");
+        let quickDelete = document.createElement("A");
         quickDelete.enabled = true;
         quickDelete.style.fontSize = "0.8em";
         quickDelete.style.display = "block";
+        quickDelete.style.cursor = "pointer";
         quickDelete.appendChild(document.createTextNode("Delete"));
         quickDelete.classList.add("linkbutton");
         quickDelete.addEventListener("click", function()
